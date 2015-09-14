@@ -1,0 +1,78 @@
+/* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
+
+/* For example, adding the extension id as prefix of CSS class name. */
+
+svg {
+  font: 10px sans-serif;
+}
+
+.legend {
+	text-transform: uppercase;
+	fill: #333;
+	font-size: .875rem;
+}
+
+rect[data-id] {
+	pointer-events: none;
+	opacity: 0;
+	transition: 250ms opacity;
+}
+
+text.label[data-id] {
+	pointer-events: none;
+	opacity: 0;
+	transition: 250ms opacity;
+	font-size: .875rem;
+}
+
+text.label.cname[data-id] {
+	opacity: 1;
+	font-size: .65rem;
+}
+
+.arrow {
+	stroke: black;
+}
+
+.area {
+  fill: steelblue;
+  clip-path: url(#clip);
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+circle {
+	stroke: black;
+}
+
+circle.inner {
+
+}
+
+circle.outer.neg {
+	visibility: visible;
+}
+
+.gartnerContext g.axis .tick {
+	display: none;
+}
+
+.gartnerContext .axis,
+.gartnerContext .axis path {
+	stroke: #666;
+}
+
+.axis.blind.inside {
+	stroke: #ccc;
+}

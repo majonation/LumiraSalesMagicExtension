@@ -1,0 +1,19 @@
+{
+	"metadataVersion": "1.0",
+	"id": "vizards.viz.ext.salesmagic",
+	"name": "Vizards Sales Magic",
+	"description": " ",
+	"version": "1.0.0",
+	"vendor": {
+		"name": "vizards",
+		"url": "Your company website"
+	},
+	"requires": [{
+		"id": "sap.viz.common.core",
+		"version": "5.7.3"
+	}],
+	"bundles": [{
+		"id": "vizards.viz.ext.salesmagic",
+		"version": "1.0.0"
+	}]
+}
